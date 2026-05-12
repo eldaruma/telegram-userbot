@@ -1,0 +1,39 @@
+{
+  "name": "telegram-userbot",
+  "version": "0.1.0",
+  "description": "Connect your personal Telegram account to OpenClaw via MTProto. Your AI assistant responds as you.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "openclaw",
+    "telegram",
+    "userbot",
+    "mtproto",
+    "gramjs",
+    "plugin"
+  ],
+  "license": "MIT",
+  "author": "eldaruma",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eldaruma/telegram-userbot"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ]
+  },
+  "devDependencies": {
+    "openclaw": "2026.5.7",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.5.7"
+  },
+  "installDependencies": true,
+  "dependencies": {
+    "telegram": "^2.26.22"
+  }
+}
